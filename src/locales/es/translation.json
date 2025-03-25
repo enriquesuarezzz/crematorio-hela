@@ -1,4 +1,29 @@
 {
-  "welcome": "¡Bienvenido al sitio web!",
-  "button": "Haz clic aquí"
+  "navbar": {
+    "services": "Servicios",
+    "process": "Proceso",
+    "fares": "Tarifas",
+    "schedules": "Horarios",
+    "about": "Sobre Nosotros",
+    "testimonials": "Testimonios",
+    "contact": "Contáctanos"
+  },
+  "header": {
+    "header_title": "Un adiós digno, un recuerdo eterno.",
+    "header_description": "El crematorio de mascotas HELA quiere ofrecer a nuestros amigos y a sus propietarios una despedida digna. Con el cariño y respeto que su mascota merece.",
+    "header_button_services": "Nuestros Servicios",
+    "header_button_contact": "Contáctanos"
+  },
+  "services": {
+    "services_title": "Nuestros Servicios",
+    "services_description": "Ofrecemos una gama de servicios especializados y respetuosos para rendir homenaje a la memoria de su mascota, asegurando su dignidad y el máximo respeto en todo momento.",
+    "individual_cremation_title": "Cremación Individual",
+    "individual_cremation_description": "La cremación individual permite conservar las cenizas de tu mascota, entregadas en una urna básica junto con un certificado de autenticidad, para que puedas mantener su recuerdo de manera especial y única.",
+    "collective_cremation_title": "Cremación Colectiva",
+    "collective_cremation_description": "La cremación colectiva es una opción más económica, ideal para quienes desean dar un final digno a su mascota sin recibir las cenizas. Además, ayuda a evitar la contaminación y contribuye al bienestar del medio ambiente.",
+    "memorial_products_title": "Productos Memoriales",
+    "memorial_products_description": "Exquisitas urnas, huellas de patas y recuerdos personalizados para honrar y preservar la memoria de su mascota de manera única.",
+    "home_pickup_title": "Recogida a Domicilio",
+    "home_pickup_description": "Servicio de transporte respetuoso y compasivo, que garantiza el traslado de su mascota desde su hogar hasta nuestras instalaciones con la máxima dignidad."
+  }
 }
