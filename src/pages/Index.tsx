@@ -1,6 +1,5 @@
-
 import NavBar from "@/components/NavBar";
-import Hero from "@/components/Hero";
+import Hero from "@/components/Header";
 import Services from "@/components/Services";
 import Process from "@/components/Process";
 import About from "@/components/About";
@@ -9,12 +8,13 @@ import Fares from "@/components/Fares";
 import Schedules from "@/components/Schedules";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import Header from "@/components/Header";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <NavBar />
-      <Hero />
+      <Header />
       <Services />
       <Process />
       <Fares />
