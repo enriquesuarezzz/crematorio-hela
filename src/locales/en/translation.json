@@ -1,4 +1,29 @@
 {
-  "welcome": "Welcome to the website!",
-  "button": "Click me"
+  "navbar": {
+    "services": "Services",
+    "process": "Process",
+    "fares": "Fares",
+    "schedules": "Schedules",
+    "about": "About",
+    "testimonials": "Testimonials",
+    "contact": "Contact Us"
+  },
+  "header": {
+    "header_title": "A dignified farewell, an eternal memory.",
+    "header_description": "Compassionate, dignified cremation services to honor the memory of your cherished pet with the respect they deserve.",
+    "header_button_services": "Our Services",
+    "header_button_contact": "Contact Us"
+  },
+  "services": {
+    "services_title": "Our Services",
+    "services_description": "We offer a range of specialized and respectful services to honor your pet's memory, ensuring dignity and the utmost respect at all times.",
+    "individual_cremation_title": "Individual Cremation",
+    "individual_cremation_description": "Individual cremation allows you to keep your pet's ashes, delivered in a basic urn along with a certificate of authenticity, so you can preserve their memory in a special and unique way.",
+    "collective_cremation_title": "Collective Cremation",
+    "collective_cremation_description": "Collective cremation is a more affordable option, ideal for those who want to give their pet a dignified end without receiving the ashes. It also helps avoid contamination and contributes to environmental well-being.",
+    "memorial_products_title": "Memorial Products",
+    "memorial_products_description": "Exquisite urns, paw prints, and personalized keepsakes to honor and preserve your pet's memory in a unique way.",
+    "home_pickup_title": "Home Pickup",
+    "home_pickup_description": "A respectful and compassionate transport service, ensuring the transfer of your pet from your home to our facilities with the utmost dignity."
+  }
 }

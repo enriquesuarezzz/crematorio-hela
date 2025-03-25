@@ -2,10 +2,12 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const NavBar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -15,6 +17,15 @@ const NavBar = () => {
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
+
+  const menuItems = [
+    "services",
+    "process",
+    "fares",
+    "schedules",
+    "about",
+    "testimonials",
+  ];
 
   return (
     <header
@@ -28,27 +39,20 @@ const NavBar = () => {
       <div className="container-xl flex items-center justify-between">
         <a
           href="#"
-          className="font-serif text-xl md:text-2xl text-primary transition hover:text-accent"
+          className="font-serif flex items-center gap-2 text-xl md:text-2xl text-primary transition hover:text-accent"
         >
-          Peaceful Paws
+          <img src="/images/logo.avif" alt="logo" className="w-40 h-16" />
         </a>
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8">
-          {[
-            "Services",
-            "Process",
-            "Fares",
-            "Schedules",
-            "About",
-            "Testimonials",
-          ].map((item) => (
+          {menuItems.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item}`}
               className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all link-underline"
             >
-              {item}
+              {t(`navbar.${item}`)}
             </a>
           ))}
           <Button
@@ -57,7 +61,7 @@ const NavBar = () => {
             size="sm"
             className="bg-accent hover:bg-accent/90"
           >
-            <a href="#contact">Contact Us</a>
+            <a href="#contact">{t("navbar.contact")}</a>
           </Button>
           <LanguageSwitcher />
         </nav>
@@ -101,21 +105,14 @@ const NavBar = () => {
         )}
       >
         <nav className="flex flex-col items-center justify-center h-full gap-8">
-          {[
-            "Services",
-            "Process",
-            "Fares",
-            "Schedules",
-            "About",
-            "Testimonials",
-          ].map((item) => (
+          {menuItems.map((item) => (
             <a
               key={item}
-              href={`#${item.toLowerCase()}`}
+              href={`#${item}`}
               className="text-lg font-medium text-muted-foreground hover:text-foreground transition-all"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              {item}
+              {t(`navbar.${item}`)}
             </a>
           ))}
           <Button
@@ -125,7 +122,7 @@ const NavBar = () => {
             className="mt-4 bg-accent hover:bg-accent/90"
           >
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              Contact Us
+              {t("navbar.contact")}
             </a>
           </Button>
           <LanguageSwitcher />
