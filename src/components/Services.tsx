@@ -1,56 +1,53 @@
-
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { FadeIn } from "./FadeIn";
-
-const services = [
-  {
-    title: "Individual Cremation",
-    description: "A private cremation where your pet is cremated alone, ensuring you receive only your pet's ashes.",
-    icon: "🔥",
-  },
-  {
-    title: "Memorial Products",
-    description: "Beautiful urns, paw prints, and keepsakes to preserve your pet's memory in a special way.",
-    icon: "🏺",
-  },
-  {
-    title: "Home Pickup",
-    description: "Compassionate transport service to bring your pet from your home to our facility with dignity.",
-    icon: "🚗",
-  },
-  {
-    title: "Memorial Services",
-    description: "Optional ceremonies to celebrate your pet's life with friends and family in a peaceful setting.",
-    icon: "🕯️",
-  },
-  {
-    title: "Grief Support",
-    description: "Resources and counseling to help you cope with the loss of your beloved companion.",
-    icon: "❤️",
-  },
-  {
-    title: "Personalized Keepsakes",
-    description: "Custom memorials including photo frames, jewelry, and glass art created with your pet's ashes.",
-    icon: "🖼️",
-  },
-];
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+
+  const services = [
+    {
+      title: t("services.individual_cremation_title"),
+      description: t("services.individual_cremation_description"),
+      icon: "🔥",
+    },
+    {
+      title: t("services.collective_cremation_title"),
+      description: t("services.collective_cremation_description"),
+      icon: "🌍",
+    },
+    {
+      title: t("services.memorial_products_title"),
+      description: t("services.memorial_products_description"),
+      icon: "🏺",
+    },
+
+    {
+      title: t("services.home_pickup_title"),
+      description: t("services.home_pickup_description"),
+      icon: "🚗",
+    },
+  ];
+
   return (
     <section id="services" className="py-24 bg-secondary/50">
       <div className="container-xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <FadeIn>
-            <h2 className="heading-lg mb-4">Our Services</h2>
+            <h2 className="heading-lg mb-4">{t("services.services_title")}</h2>
           </FadeIn>
           <FadeIn delay={200}>
-            <p className="body-base">
-              We offer a range of compassionate services to honor your pet's memory with dignity and respect.
-            </p>
+            <p className="body-base">{t("services.services_description")}</p>
           </FadeIn>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           {services.map((service, index) => (
             <FadeIn key={index} delay={100 * index} threshold={0.1}>
               <Card className="h-full subtle-shadow hover:-translate-y-1 transition-all overflow-hidden">
