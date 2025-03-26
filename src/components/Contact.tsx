@@ -1,13 +1,14 @@
-
 import { Button } from "@/components/ui/button";
 import { FadeIn } from "./FadeIn";
 import { useState } from "react";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
+import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { toast } = useToast();
+  const { t } = useTranslation();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -26,8 +27,8 @@ const Contact = () => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     toast({
-      title: "Message Sent",
-      description: "We'll get back to you as soon as possible.",
+      title: t("contact_us.message_sent"),
+      description: t("contact_us.we_will_get_back_to_you"),
     });
     setFormData({
       name: "",
@@ -43,11 +44,11 @@ const Contact = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div>
             <FadeIn direction="up">
-              <h2 className="heading-lg mb-6">Contact Us</h2>
+              <h2 className="heading-lg mb-6">{t("contact_us.contact_us")}</h2>
             </FadeIn>
             <FadeIn direction="up" delay={200}>
               <p className="body-base mb-8">
-                We're here to help you through this difficult time. Reach out to us with any questions or to arrange services.
+                {t("contact_us.we_are_here_to_telp")}
               </p>
             </FadeIn>
 
@@ -76,11 +77,20 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium mb-1">Location</h3>
+                    <h3 className="font-medium mb-1">
+                      {t("contact_us.location")}
+                    </h3>
                     <p className="text-muted-foreground">
-                      123 Serenity Lane
-                      <br />
-                      Peaceful Valley, CA 95123
+                      <a
+                        href="https://www.google.com/maps?q=C/Agustin+de+la+Hoz+Betancort,+11,+Arrecife,+Lanzarote+35500"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-accent hover:underline"
+                      >
+                        C/Agustin de la Hoz Betancort, 11
+                        <br />
+                        Arrecife, Lanzarote 35500
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -105,9 +115,25 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium mb-1">Phone</h3>
-                    <p className="text-muted-foreground">(555) 123-4567</p>
-                    <p className="text-sm text-muted-foreground mt-1">Available 24/7</p>
+                    <h3 className="font-medium mb-1">
+                      {t("contact_us.phone")}
+                    </h3>
+                    <p className="text-muted-foreground">
+                      <a
+                        href="tel:+34680128177"
+                        className="text-accent hover:underline"
+                      >
+                        (+34) 680 128 177
+                      </a>
+                    </p>
+                    <p className="text-muted-foreground">
+                      <a
+                        href="tel:+34672187032"
+                        className="text-accent hover:underline"
+                      >
+                        (+34) 672 187 032
+                      </a>
+                    </p>
                   </div>
                 </div>
               </FadeIn>
@@ -131,9 +157,16 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium mb-1">Email</h3>
+                    <h3 className="font-medium mb-1">
+                      {t("contact_us.email")}
+                    </h3>
                     <p className="text-muted-foreground">
-                      care@peacefulpaws.example
+                      <a
+                        href="mailto:info@crematoriohela.com"
+                        className="text-accent hover:underline"
+                      >
+                        info@crematoriohela.com
+                      </a>
                     </p>
                   </div>
                 </div>
@@ -143,16 +176,18 @@ const Contact = () => {
 
           <FadeIn direction="up" delay={300}>
             <div className="glass-card p-8 rounded-2xl">
-              <h3 className="text-xl font-medium mb-6">Send Us a Message</h3>
+              <h3 className="text-xl font-medium mb-6">
+                {t("contact_us.send_us_message")}
+              </h3>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium">
-                    Name
+                    {t("contact_us.name")}
                   </label>
                   <Input
                     id="name"
                     name="name"
-                    placeholder="Your name"
+                    placeholder={t("contact_us.your_name")}
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -161,13 +196,13 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium">
-                    Email
+                    {t("contact_us.email")}
                   </label>
                   <Input
                     id="email"
                     name="email"
                     type="email"
-                    placeholder="Your email"
+                    placeholder={t("contact_us.your_email")}
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -176,12 +211,12 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <label htmlFor="phone" className="text-sm font-medium">
-                    Phone Number
+                    {t("contact_us.phone_number")}
                   </label>
                   <Input
                     id="phone"
                     name="phone"
-                    placeholder="Your phone number"
+                    placeholder={t("contact_us.phone_number")}
                     value={formData.phone}
                     onChange={handleChange}
                   />
@@ -189,12 +224,12 @@ const Contact = () => {
 
                 <div className="space-y-2">
                   <label htmlFor="message" className="text-sm font-medium">
-                    Message
+                    {t("contact_us.message")}
                   </label>
                   <Textarea
                     id="message"
                     name="message"
-                    placeholder="How can we help you?"
+                    placeholder={t("contact_us.how_can_we_help")}
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
@@ -202,8 +237,12 @@ const Contact = () => {
                   />
                 </div>
 
-                <Button type="submit" size="lg" className="w-full bg-accent hover:bg-accent/90">
-                  Send Message
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full bg-accent hover:bg-accent/90"
+                >
+                  {t("contact_us.send_message")}
                 </Button>
               </form>
             </div>
