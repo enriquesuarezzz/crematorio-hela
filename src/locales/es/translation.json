@@ -5,7 +5,6 @@
     "fares": "Tarifas",
     "schedules": "Horarios",
     "about": "Sobre Nosotros",
-    "testimonials": "Testimonios",
     "contact": "Contáctanos"
   },
   "header": {
@@ -25,5 +24,89 @@
     "memorial_products_description": "Exquisitas urnas, huellas de patas y recuerdos personalizados para honrar y preservar la memoria de su mascota de manera única.",
     "home_pickup_title": "Recogida a Domicilio",
     "home_pickup_description": "Servicio de transporte respetuoso y compasivo, que garantiza el traslado de su mascota desde su hogar hasta nuestras instalaciones con la máxima dignidad."
+  },
+  "process": {
+    "title": "El Proceso",
+    "description": "Nuestro proceso está pensado para brindarle a tu mascota una despedida llena de cariño y respeto.",
+    "initial_contact_title": "Contacto Inicial",
+    "initial_contact_description": "Comunícate con nosotros por teléfono, correo electrónico o a través de nuestra página web. Estamos disponibles las 24 horas del día para ayudarte en este momento difícil.",
+    "arrangements_title": "Preparativos",
+    "arrangements_description": "Discute tus preferencias, selecciona el tipo de servicio de cremación y elige los productos conmemorativos que desees.",
+    "transportation_title": "Transporte",
+    "transportation_description": "Organizaremos el traslado respetuoso de tu mascota desde tu hogar o clínica veterinaria hasta nuestras instalaciones.",
+    "cremation_title": "Cremación",
+    "cremation_description": "Tu mascota será cremada con cuidado y dignidad según el tipo de servicio elegido.",
+    "return_ashes_title": "Entrega de Cenizas",
+    "return_ashes_description": "Recibe las cenizas de tu mascota en la urna seleccionada, ya sea recogida en nuestras instalaciones o entrega a domicilio.",
+    "aftercare_support_title": "Apoyo Posterior",
+    "aftercare_support_description": "Seguimos acompañándote con recursos y apoyo para ayudarte a sanar y encontrar consuelo."
+  },
+  "about": {
+    "title": "Sobre nosotros",
+    "paragraph1": "En 2015 iniciamos este proyecto con la misión de cubrir una necesidad que muchos dueños de mascotas, incluyéndonos a nosotros mismos, llevaban tiempo demandando: brindar una despedida digna y respetuosa para sus compañeros de vida.",
+    "paragraph2": "Al seleccionar nuestro horno crematorio, priorizamos dos aspectos clave. Primero, que se adaptara específicamente a las mascotas, garantizando un proceso cuidadoso y adecuado. Segundo, minimizar el impacto ambiental, ya que somos conscientes de que la cremación puede ser una actividad potencialmente contaminante. Gracias a la tecnología que empleamos, nuestras emisiones estimadas son inferiores al 1%.",
+    "paragraph3": "Nuestro mayor deseo es ser de ayuda cuando llegue el difícil momento de decir adiós, acompañándote con empatía y respeto en ese último adiós."
+  },
+  "schedules": {
+    "title": "Horarios de Servicio",
+    "description": "Nuestros horarios de atención al cliente son:",
+    "pickup_title": "HORARIOS DE RECOGIDA",
+    "days": "DÍAS",
+    "hours": "HORARIO",
+    "special_availability": "Disponibilidad Especial",
+    "special_availability_description": "Para situaciones especiales o servicios fuera del horario establecido, consulte con nuestro equipo para coordinar una atención personalizada.",
+    "monday_to_friday": "LUNES A VIERNES",
+    "saturdays": "SÁBADOS",
+    "emergency": "URGENCIAS",
+    "time_9_to_21": "09:00 - 21:00",
+    "time_9_to_14": "09:00 - 14:00",
+    "time_emergency": "30 €"
+  },
+  "fares": {
+    "title": "Nuestras Tarifas",
+    "description": "Las tarifas de nuestros servicios de cremación son:",
+    "individual_cremation": "CREMACIÓN INDIVIDUAL",
+    "collective_cremation": "CREMACIÓN COLECTIVA",
+    "weight": "PESO DE LA MASCOTA",
+    "price": "PRECIO TOTAL",
+    "weight_1_to_2kg": "INFERIOR A 1KG HASTA 2KG",
+    "weight_2_to_20kg": "MÁS DE 2KG HASTA 20KG",
+    "weight_20_to_45kg": "MÁS DE 20KG HASTA 45KG",
+    "weight_45_to_65kg": "MÁS DE 45KG HASTA 65KG",
+    "weight_65kg_above": "MÁS DE 65KG",
+    "additional_info": "Del mismo modo queremos informarles que aquellos servicios que se realizan a través de su veterinario pueden ver el coste incrementado debido a los gastos de gestión."
+  },
+  "contact_us": {
+    "contact_us": "Contáctanos",
+    "we_are_here_to_telp": "Estamos aquí para ayudarte en este momento difícil. Contáctanos con cualquier pregunta o para organizar servicios.",
+    "location": "Ubicación",
+    "phone": "Teléfono",
+    "email": "Correo electrónico",
+    "send_us_message": "Envíanos un mensaje",
+    "name": "Nombre",
+    "your_name": "Tu nombre",
+    "your_email": "Tu correo electrónico",
+    "phone_number": "Número de teléfono",
+    "message": "Mensaje",
+    "how_can_we_help": "¿Cómo podemos ayudarte?",
+    "send_message": "Enviar mensaje",
+    "message_sent": "Mensaje enviado",
+    "we_will_get_back_to_you": "Nos pondremos en contacto contigo lo antes posible",
+    "available_24/7": "Disponible 24/7"
+  },
+  "footer": {
+    "about": "Crematorio Hela",
+    "description": "Proporcionando atención compasiva al final de la vida de las mascotas desde 2010.",
+    "social": {
+      "facebook": "Visita nuestro Facebook",
+      "twitter": "Visita nuestro Twitter",
+      "instagram": "Visita nuestro Instagram"
+    },
+    "quickLinks": "Enlaces Rápidos",
+    "contact": "Contacto",
+    "address": "C/Agustin de la Hoz Betancort, 11\nArrecife, Lanzarote 35500",
+    "phone": "(+34) 680 128 177 / (+34) 672 187 032",
+    "email": "info@crematoriohela.com",
+    "createdBy": "Creado por"
   }
 }

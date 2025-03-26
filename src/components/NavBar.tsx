@@ -18,14 +18,7 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const menuItems = [
-    "services",
-    "process",
-    "fares",
-    "schedules",
-    "about",
-    "testimonials",
-  ];
+  const menuItems = ["services", "process", "fares", "schedules", "about"];
 
   return (
     <header

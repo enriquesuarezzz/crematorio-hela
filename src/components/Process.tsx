@@ -1,51 +1,51 @@
-
+import { useTranslation } from "react-i18next";
 import { FadeIn } from "./FadeIn";
 
-const processSteps = [
-  {
-    number: "01",
-    title: "Initial Contact",
-    description: "Reach out to us by phone, email, or through our website. We're available 24/7 to assist you during this difficult time.",
-  },
-  {
-    number: "02",
-    title: "Arrangements",
-    description: "Discuss your preferences, select the type of cremation service, and choose any memorial products you desire.",
-  },
-  {
-    number: "03",
-    title: "Transportation",
-    description: "We'll arrange for the gentle transport of your pet from your home or veterinary clinic to our facility.",
-  },
-  {
-    number: "04",
-    title: "Cremation",
-    description: "Your pet will be cremated with care and dignity according to your chosen service type.",
-  },
-  {
-    number: "05",
-    title: "Return of Ashes",
-    description: "Receive your pet's ashes in your selected urn, either by pickup at our facility or delivery to your home.",
-  },
-  {
-    number: "06",
-    title: "Aftercare Support",
-    description: "We continue to provide resources and support to help you navigate your grief journey.",
-  },
-];
-
 const Process = () => {
+  const { t } = useTranslation();
+
+  const processSteps = [
+    {
+      number: "01",
+      title: t("process.initial_contact_title"),
+      description: t("process.initial_contact_description"),
+    },
+    {
+      number: "02",
+      title: t("process.arrangements_title"),
+      description: t("process.arrangements_description"),
+    },
+    {
+      number: "03",
+      title: t("process.transportation_title"),
+      description: t("process.transportation_description"),
+    },
+    {
+      number: "04",
+      title: t("process.cremation_title"),
+      description: t("process.cremation_description"),
+    },
+    {
+      number: "05",
+      title: t("process.return_ashes_title"),
+      description: t("process.return_ashes_description"),
+    },
+    {
+      number: "06",
+      title: t("process.aftercare_support_title"),
+      description: t("process.aftercare_support_description"),
+    },
+  ];
+
   return (
     <section id="process" className="py-24">
       <div className="container-xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <FadeIn>
-            <h2 className="heading-lg mb-4">The Process</h2>
+            <h2 className="heading-lg mb-4">{t("process.title")}</h2>
           </FadeIn>
           <FadeIn delay={200}>
-            <p className="body-base">
-              We've designed a compassionate process to ensure your pet's final journey is handled with care and respect.
-            </p>
+            <p className="body-base">{t("process.description")}</p>
           </FadeIn>
         </div>
 
