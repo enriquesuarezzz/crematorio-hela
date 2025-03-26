@@ -5,7 +5,6 @@
     "fares": "Fares",
     "schedules": "Schedules",
     "about": "About",
-    "testimonials": "Testimonials",
     "contact": "Contact Us"
   },
   "header": {
@@ -25,5 +24,89 @@
     "memorial_products_description": "Exquisite urns, paw prints, and personalized keepsakes to honor and preserve your pet's memory in a unique way.",
     "home_pickup_title": "Home Pickup",
     "home_pickup_description": "A respectful and compassionate transport service, ensuring the transfer of your pet from your home to our facilities with the utmost dignity."
+  },
+  "process": {
+    "title": "The Process",
+    "description": "Our process is designed to give your pet a farewell filled with love and respect.",
+    "initial_contact_title": "Initial Contact",
+    "initial_contact_description": "Reach out to us by phone, email, or through our website. We're available 24/7 to assist you during this difficult time.",
+    "arrangements_title": "Arrangements",
+    "arrangements_description": "Discuss your preferences, select the type of cremation service, and choose any memorial products you desire.",
+    "transportation_title": "Transportation",
+    "transportation_description": "We'll arrange for the gentle transport of your pet from your home or veterinary clinic to our facility.",
+    "cremation_title": "Cremation",
+    "cremation_description": "Your pet will be cremated with care and dignity according to your chosen service type.",
+    "return_ashes_title": "Return of Ashes",
+    "return_ashes_description": "Receive your pet's ashes in your selected urn, either by pickup at our facility or delivery to your home.",
+    "aftercare_support_title": "Aftercare Support",
+    "aftercare_support_description": "We continue to provide resources and support to help you navigate your grief journey."
+  },
+  "about": {
+    "title": "About us",
+    "paragraph1": "We started this project in 2015 with the mission of meeting a need that many pet owners — including ourselves — had long been asking for: providing a dignified and respectful farewell for their beloved companions.",
+    "paragraph2": "When choosing our cremation furnace, we prioritized two key aspects. First, ensuring it was specifically designed for pets, guaranteeing a gentle and appropriate process. Second, minimizing environmental impact, knowing cremation can be a potentially polluting activity. Thanks to the technology we use, our estimated emissions are below 1%.",
+    "paragraph3": "Our greatest wish is to support you when the difficult time comes to say goodbye, offering empathy and respect throughout this final farewell."
+  },
+  "schedules": {
+    "title": "Service Hours",
+    "description": "Our customer service hours are:",
+    "pickup_title": "PICKUP HOURS",
+    "days": "DAYS",
+    "hours": "HOURS",
+    "special_availability": "Special Availability",
+    "special_availability_description": "For special situations or services outside of regular hours, please consult with our team to arrange personalized care.",
+    "monday_to_friday": "MONDAY TO FRIDAY",
+    "saturdays": "SATURDAYS",
+    "emergency": "EMERGENCY",
+    "time_9_to_21": "09:00 - 21:00",
+    "time_9_to_14": "09:00 - 14:00",
+    "time_emergency": "30 €"
+  },
+  "fares": {
+    "title": "Our Rates",
+    "description": "The rates for our cremation services are:",
+    "individual_cremation": "INDIVIDUAL CREMATION",
+    "collective_cremation": "COLLECTIVE CREMATION",
+    "weight": "PET WEIGHT",
+    "price": "TOTAL PRICE",
+    "weight_1_to_2kg": "Up to 1kg to 2kg",
+    "weight_2_to_20kg": "More than 2kg to 20kg",
+    "weight_20_to_45kg": "More than 20kg to 45kg",
+    "weight_45_to_65kg": "More than 45kg to 65kg",
+    "weight_65kg_above": "More than 65kg",
+    "additional_info": "Similarly, we want to inform you that services performed through your vet may have additional management costs."
+  },
+  "contact_us": {
+    "contact_us": "Contact Us",
+    "we_are_here_to_telp": "We're here to help you through this difficult time. Reach out to us with any questions or to arrange services.",
+    "location": "Location",
+    "phone": "Phone",
+    "email": "Email",
+    "send_us_message": "Send Us a Message",
+    "name": "Name",
+    "your_name": "Your name",
+    "your_email": "Your email",
+    "phone_number": "Phone Number",
+    "message": "Message",
+    "how_can_we_help": "How can we help you?",
+    "send_message": "Send Message",
+    "message_sent": "Message Sent",
+    "we_will_get_back_to_you": "We'll get back to you as soon as possible",
+    "available_24/7": "Available 24/7"
+  },
+  "footer": {
+    "about": "Crematorio Hela",
+    "description": "Providing compassionate end-of-life care for beloved pets since 2010.",
+    "social": {
+      "facebook": "Visit our Facebook",
+      "twitter": "Visit our Twitter",
+      "instagram": "Visit our Instagram"
+    },
+    "quickLinks": "Quick Links",
+    "contact": "Contact",
+    "address": "C/Agustin de la Hoz Betancort, 11\nArrecife, Lanzarote 35500",
+    "phone": "(+34) 680 128 177 / (+34) 672 187 032",
+    "email": "info@crematoriohela.com",
+    "createdBy": "Created by"
   }
 }
