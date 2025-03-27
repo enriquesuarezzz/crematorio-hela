@@ -1,48 +1,14 @@
-import { Button } from "@/components/ui/button";
 import { FadeIn } from "./FadeIn";
-import { useState } from "react";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
-  const { toast } = useToast();
   const { t } = useTranslation();
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    message: "",
-  });
-
-  const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
-  ) => {
-    const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log("Form submitted:", formData);
-    toast({
-      title: t("contact_us.message_sent"),
-      description: t("contact_us.we_will_get_back_to_you"),
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      message: "",
-    });
-  };
 
   return (
-    <section id="contact" className="py-24 bg-secondary/50">
+    <section id="contact" className="py-6 md:py-16 lg:py-24  bg-secondary/50">
       <div className="container-xl">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <div>
+        <div className="w-full flex items-center justify-center">
+          <div className="w-full flex flex-col items-center justify-center">
             <FadeIn direction="up">
               <h2 className="heading-lg mb-6">{t("contact_us.contact_us")}</h2>
             </FadeIn>
@@ -52,17 +18,17 @@ const Contact = () => {
               </p>
             </FadeIn>
 
-            <div className="space-y-6">
+            <div className="md:grid flex flex-col md:grid-cols-2 gap-12">
               <FadeIn direction="up" delay={300}>
                 <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-3 rounded-lg">
+                  <div className="bg-[#f39318]/20 p-3 rounded-lg shadow-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6 text-accent"
+                      className="w-6 h-6 text-[#f39318]"
                     >
                       <path
                         strokeLinecap="round"
@@ -77,7 +43,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div>
-                    <h3 className="font-medium mb-1">
+                    <h3 className="font-medium mb-1 ">
                       {t("contact_us.location")}
                     </h3>
                     <p className="text-muted-foreground">
@@ -85,7 +51,7 @@ const Contact = () => {
                         href="https://www.google.com/maps?q=C/Agustin+de+la+Hoz+Betancort,+11,+Arrecife,+Lanzarote+35500"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-accent hover:underline"
+                        className="text-gray-600 hover:underline transition-all duration-300 ease-in-out"
                       >
                         C/Agustin de la Hoz Betancort, 11
                         <br />
@@ -98,14 +64,14 @@ const Contact = () => {
 
               <FadeIn direction="up" delay={400}>
                 <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-3 rounded-lg">
+                  <div className="bg-[#f39318]/20 p-3 rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6 text-accent"
+                      className="w-6 h-6 text-[#f39318]"
                     >
                       <path
                         strokeLinecap="round"
@@ -118,18 +84,11 @@ const Contact = () => {
                     <h3 className="font-medium mb-1">
                       {t("contact_us.phone")}
                     </h3>
-                    <p className="text-muted-foreground">
-                      <a
-                        href="tel:+34680128177"
-                        className="text-accent hover:underline"
-                      >
-                        (+34) 680 128 177
-                      </a>
-                    </p>
+
                     <p className="text-muted-foreground">
                       <a
                         href="tel:+34672187032"
-                        className="text-accent hover:underline"
+                        className="text-gray-600 hover:underline"
                       >
                         (+34) 672 187 032
                       </a>
@@ -140,14 +99,14 @@ const Contact = () => {
 
               <FadeIn direction="up" delay={500}>
                 <div className="flex items-start gap-4">
-                  <div className="bg-accent/10 p-3 rounded-lg">
+                  <div className="bg-[#f39318]/20 p-3 rounded-lg">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       fill="none"
                       viewBox="0 0 24 24"
                       strokeWidth={1.5}
                       stroke="currentColor"
-                      className="w-6 h-6 text-accent"
+                      className="w-6 h-6 text-[#f39318]"
                     >
                       <path
                         strokeLinecap="round"
@@ -163,7 +122,7 @@ const Contact = () => {
                     <p className="text-muted-foreground">
                       <a
                         href="mailto:info@crematoriohela.com"
-                        className="text-accent hover:underline"
+                        className="text-gray-600 hover:underline"
                       >
                         info@crematoriohela.com
                       </a>
@@ -173,80 +132,6 @@ const Contact = () => {
               </FadeIn>
             </div>
           </div>
-
-          <FadeIn direction="up" delay={300}>
-            <div className="glass-card p-8 rounded-2xl">
-              <h3 className="text-xl font-medium mb-6">
-                {t("contact_us.send_us_message")}
-              </h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-medium">
-                    {t("contact_us.name")}
-                  </label>
-                  <Input
-                    id="name"
-                    name="name"
-                    placeholder={t("contact_us.your_name")}
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-medium">
-                    {t("contact_us.email")}
-                  </label>
-                  <Input
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder={t("contact_us.your_email")}
-                    value={formData.email}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="phone" className="text-sm font-medium">
-                    {t("contact_us.phone_number")}
-                  </label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    placeholder={t("contact_us.phone_number")}
-                    value={formData.phone}
-                    onChange={handleChange}
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm font-medium">
-                    {t("contact_us.message")}
-                  </label>
-                  <Textarea
-                    id="message"
-                    name="message"
-                    placeholder={t("contact_us.how_can_we_help")}
-                    rows={4}
-                    value={formData.message}
-                    onChange={handleChange}
-                    required
-                  />
-                </div>
-
-                <Button
-                  type="submit"
-                  size="lg"
-                  className="w-full bg-accent hover:bg-accent/90"
-                >
-                  {t("contact_us.send_message")}
-                </Button>
-              </form>
-            </div>
-          </FadeIn>
         </div>
       </div>
     </section>
