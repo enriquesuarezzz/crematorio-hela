@@ -36,7 +36,7 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-secondary/50">
+    <section id="services" className="py-6 md:py-16 lg:py-24  bg-secondary/50">
       <div className="container-xl">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <FadeIn>

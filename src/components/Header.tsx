@@ -48,7 +48,7 @@ const Header = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-accent hover:bg-accent/90 px-8"
+                className="bg-orange hover:bg-hover-orange transition-all px-8"
               >
                 <a href="#services">{t("header.header_button_services")}</a>
               </Button>

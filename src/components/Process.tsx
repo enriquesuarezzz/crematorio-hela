@@ -53,7 +53,7 @@ const Process = () => {
           {processSteps.map((step, index) => (
             <FadeIn key={index} delay={100 * index} direction="up">
               <div className="relative">
-                <div className="absolute -top-8 text-6xl font-light text-accent/20">
+                <div className="absolute -top-8 text-6xl font-light text-orange/30">
                   {step.number}
                 </div>
                 <h3 className="text-xl font-medium mb-3">{step.title}</h3>

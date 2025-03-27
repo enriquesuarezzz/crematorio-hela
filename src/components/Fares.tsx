@@ -29,7 +29,7 @@ const Fares = () => {
   ];
 
   return (
-    <section id="fares" className="py-20 bg-secondary/50">
+    <section id="fares" className="py-6 md:py-16 lg:py-24  bg-secondary/50">
       <div className="container-xl">
         <FadeIn direction="up" delay={100}>
           <div className="text-center mb-16">
@@ -42,8 +42,8 @@ const Fares = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           <FadeIn direction="up" delay={200}>
-            <Card className="shadow-soft overflow-hidden border-t-4 border-t-orange-500">
-              <CardHeader className="bg-orange-500 text-white text-center py-3">
+            <Card className="shadow-soft overflow-hidden border-t-4 border-t-orange">
+              <CardHeader className="bg-orange text-white text-center py-3">
                 <CardTitle>{t("fares.individual_cremation")}</CardTitle>
               </CardHeader>
               <CardContent className="p-0">
@@ -79,8 +79,8 @@ const Fares = () => {
           </FadeIn>
 
           <FadeIn direction="up" delay={300}>
-            <Card className="shadow-soft overflow-hidden border-t-4 border-t-orange-500">
-              <CardHeader className="bg-orange-500 text-white text-center py-3">
+            <Card className="shadow-soft overflow-hidden border-t-4 border-t-orange">
+              <CardHeader className="bg-orange text-white text-center py-3">
                 <CardTitle>{t("fares.collective_cremation")}</CardTitle>
               </CardHeader>
               <CardContent className="p-0">

@@ -4,7 +4,7 @@
     "process": "Process",
     "fares": "Fares",
     "schedules": "Schedules",
-    "about": "About",
+    "about": "About Us",
     "contact": "Contact Us"
   },
   "header": {
@@ -81,32 +81,11 @@
     "we_are_here_to_telp": "We're here to help you through this difficult time. Reach out to us with any questions or to arrange services.",
     "location": "Location",
     "phone": "Phone",
-    "email": "Email",
-    "send_us_message": "Send Us a Message",
-    "name": "Name",
-    "your_name": "Your name",
-    "your_email": "Your email",
-    "phone_number": "Phone Number",
-    "message": "Message",
-    "how_can_we_help": "How can we help you?",
-    "send_message": "Send Message",
-    "message_sent": "Message Sent",
-    "we_will_get_back_to_you": "We'll get back to you as soon as possible",
-    "available_24/7": "Available 24/7"
+    "email": "Email"
   },
   "footer": {
-    "about": "Crematorio Hela",
-    "description": "Providing compassionate end-of-life care for beloved pets since 2010.",
-    "social": {
-      "facebook": "Visit our Facebook",
-      "twitter": "Visit our Twitter",
-      "instagram": "Visit our Instagram"
-    },
-    "quickLinks": "Quick Links",
-    "contact": "Contact",
-    "address": "C/Agustin de la Hoz Betancort, 11\nArrecife, Lanzarote 35500",
-    "phone": "(+34) 680 128 177 / (+34) 672 187 032",
-    "email": "info@crematoriohela.com",
-    "createdBy": "Created by"
+    "title": "Crematorio Hela",
+    "description": "Providing a serene and loving farewell to your pets since 2015.",
+    "copyright": "Crematorio Hela. All rights reserved."
   }
 }

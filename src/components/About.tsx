@@ -5,7 +5,7 @@ const About = () => {
   const { t } = useTranslation();
 
   return (
-    <section id="about" className="py-24 bg-secondary/50">
+    <section id="about" className="py-6 md:py-16 lg:py-24 bg-secondary/50">
       <div className="container-xl">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <FadeIn direction="right">

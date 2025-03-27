@@ -23,7 +23,7 @@ const Schedules = () => {
   ];
 
   return (
-    <section id="schedules" className="py-20">
+    <section id="schedules" className="py-6 md:py-16 lg:py-24 ">
       <div className="container-xl max-w-4xl">
         <FadeIn direction="up" delay={100}>
           <div className="text-center mb-12">
@@ -35,8 +35,8 @@ const Schedules = () => {
         </FadeIn>
 
         <FadeIn direction="up" delay={200}>
-          <Card className="shadow-soft overflow-hidden border-t-4 border-t-orange-500 max-w-2xl mx-auto">
-            <CardHeader className="bg-orange-500 text-white text-center py-3 flex flex-row items-center justify-center gap-2">
+          <Card className="shadow-soft overflow-hidden border-t-4 border-t-orange max-w-2xl mx-auto">
+            <CardHeader className="bg-orange text-white text-center py-3 flex flex-row items-center justify-center gap-2">
               <Clock className="h-5 w-5" />
               <CardTitle>{t("schedules.pickup_title")}</CardTitle>
             </CardHeader>
@@ -72,7 +72,7 @@ const Schedules = () => {
 
         <FadeIn direction="up" delay={300}>
           <div className="mt-12 text-center flex flex-col items-center gap-4">
-            <div className="inline-flex items-center gap-2 text-accent">
+            <div className="inline-flex items-center gap-2 text-orange">
               <Calendar className="h-5 w-5" />
               <span className="font-medium">
                 {t("schedules.special_availability")}
