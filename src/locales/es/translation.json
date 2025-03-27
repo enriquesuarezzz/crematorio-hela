@@ -81,32 +81,11 @@
     "we_are_here_to_telp": "Estamos aquí para ayudarte en este momento difícil. Contáctanos con cualquier pregunta o para organizar servicios.",
     "location": "Ubicación",
     "phone": "Teléfono",
-    "email": "Correo electrónico",
-    "send_us_message": "Envíanos un mensaje",
-    "name": "Nombre",
-    "your_name": "Tu nombre",
-    "your_email": "Tu correo electrónico",
-    "phone_number": "Número de teléfono",
-    "message": "Mensaje",
-    "how_can_we_help": "¿Cómo podemos ayudarte?",
-    "send_message": "Enviar mensaje",
-    "message_sent": "Mensaje enviado",
-    "we_will_get_back_to_you": "Nos pondremos en contacto contigo lo antes posible",
-    "available_24/7": "Disponible 24/7"
+    "email": "Correo electrónico"
   },
   "footer": {
-    "about": "Crematorio Hela",
-    "description": "Proporcionando atención compasiva al final de la vida de las mascotas desde 2010.",
-    "social": {
-      "facebook": "Visita nuestro Facebook",
-      "twitter": "Visita nuestro Twitter",
-      "instagram": "Visita nuestro Instagram"
-    },
-    "quickLinks": "Enlaces Rápidos",
-    "contact": "Contacto",
-    "address": "C/Agustin de la Hoz Betancort, 11\nArrecife, Lanzarote 35500",
-    "phone": "(+34) 680 128 177 / (+34) 672 187 032",
-    "email": "info@crematoriohela.com",
-    "createdBy": "Creado por"
+    "title": "Crematorio Hela",
+    "description": "Brindando un adiós sereno y lleno de amor a tus mascotas desde 2015.",
+    "copyright": "Crematorio Hela. Todos los derechos reservados."
   }
 }
