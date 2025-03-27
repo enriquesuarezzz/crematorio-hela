@@ -12,7 +12,7 @@ const Header = () => {
       <div
         className="absolute inset-0 -z-10 opacity-20 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/images/header_image.avif')`,
+          backgroundImage: `url('/images/1.jpg')`,
         }}
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/90 via-background/50 to-background/90" />
@@ -48,7 +48,7 @@ const Header = () => {
               <Button
                 asChild
                 size="lg"
-                className="bg-accent hover:bg-accent/90 px-8"
+                className="bg-orange hover:bg-hover-orange transition-all px-8"
               >
                 <a href="#services">{t("header.header_button_services")}</a>
               </Button>
@@ -63,9 +63,9 @@ const Header = () => {
           <div className="glass-card rounded-2xl p-1 shadow-soft-lg">
             <div className="overflow-hidden rounded-xl">
               <img
-                src="/images/header_image.avif"
+                src="/images/1.jpg"
                 alt={t("header.header_title")}
-                className="w-full h-auto object-cover transition-transform duration-7000 hover:scale-105"
+                className="w-full h-[600px] object-cover transition-transform duration-7000 hover:scale-105"
               />
             </div>
           </div>
