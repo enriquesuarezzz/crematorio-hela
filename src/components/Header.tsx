@@ -12,7 +12,7 @@ const Header = () => {
       <div
         className="absolute inset-0 -z-10 opacity-20 bg-cover bg-center"
         style={{
-          backgroundImage: `url('/images/1.jpg')`,
+          backgroundImage: `url('/images/header_image.avif')`,
         }}
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/90 via-background/50 to-background/90" />
@@ -63,9 +63,9 @@ const Header = () => {
           <div className="glass-card rounded-2xl p-1 shadow-soft-lg">
             <div className="overflow-hidden rounded-xl">
               <img
-                src="/images/1.jpg"
+                src="/images/header_image.avif"
                 alt={t("header.header_title")}
-                className="w-full h-[600px] object-cover transition-transform duration-7000 hover:scale-105"
+                className="w-full h-auto object-cover transition-transform duration-7000 hover:scale-105"
               />
             </div>
           </div>
