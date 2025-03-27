@@ -32,7 +32,7 @@ const NavBar = () => {
       <div className="container-xl flex items-center justify-between">
         <a
           href="#"
-          className="font-serif flex items-center gap-2 text-xl md:text-2xl text-primary transition hover:text-accent"
+          className="font-serif flex items-center gap-2 text-xl md:text-2xl text-primary transition hover:text-orange"
         >
           <img src="/images/logo.avif" alt="logo" className="w-40 h-16" />
         </a>
@@ -52,7 +52,7 @@ const NavBar = () => {
             asChild
             variant="default"
             size="sm"
-            className="bg-accent hover:bg-accent/90"
+            className="bg-[#f39318] hover:bg-hover-orange transition-all"
           >
             <a href="#contact">{t("navbar.contact")}</a>
           </Button>
@@ -112,7 +112,7 @@ const NavBar = () => {
             asChild
             variant="default"
             size="default"
-            className="mt-4 bg-accent hover:bg-accent/90"
+            className="mt-4 bg-orange hover:bg-orange/90"
           >
             <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
               {t("navbar.contact")}
