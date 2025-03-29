@@ -18,110 +18,132 @@ const NavBar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
+  }, [isMobileMenuOpen]);
+
   const menuItems = ["services", "process", "fares", "schedules", "about"];
 
   return (
-    <header
-      className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out py-4",
-        scrolled
-          ? "bg-white/90 backdrop-blur-md shadow-soft-sm py-3"
-          : "bg-transparent"
-      )}
-    >
-      <div className="container-xl flex items-center justify-between">
-        <a
-          href="#"
-          className="font-serif flex items-center gap-2 text-xl md:text-2xl text-primary transition hover:text-orange"
-        >
-          <img src="/images/logo.avif" alt="logo" className="w-40 h-16" />
-        </a>
-
-        {/* Desktop Menu */}
-        <nav className="hidden md:flex items-center gap-8">
-          {menuItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item}`}
-              className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all link-underline"
-            >
-              {t(`navbar.${item}`)}
-            </a>
-          ))}
-          <Button
-            asChild
-            variant="default"
-            size="sm"
-            className="bg-[#f39318] hover:bg-hover-orange transition-all"
+    <>
+      <header
+        className={cn(
+          "fixed top-0 w-full z-50 transition-all duration-300 ease-in-out py-4",
+          scrolled
+            ? "bg-white/90 backdrop-blur-md shadow-soft-sm py-3"
+            : "bg-transparent"
+        )}
+      >
+        <div className="container-xl flex items-center justify-between p-4 mx-4">
+          <a
+            href="#"
+            className="font-serif flex items-center gap-2 text-xl md:text-2xl text-primary transition hover:text-orange"
           >
-            <a href="#contact">{t("navbar.contact")}</a>
-          </Button>
-          <LanguageSwitcher />
-        </nav>
+            <img
+              src="/images/logo.avif"
+              alt="logo"
+              className="w-20 lg:w-40 h-10 lg:h-16"
+            />
+          </a>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="md:hidden focus:outline-none"
-          aria-label="Toggle Menu"
-        >
-          <div className="w-6 flex flex-col gap-1.5">
+          {/* Desktop Menu */}
+          <nav className="hidden md:flex items-center gap-4 lg:gap-8">
+            {menuItems.map((item) => (
+              <a
+                key={item}
+                href={`#${item}`}
+                className="text-sm font-medium text-muted-foreground hover:text-foreground transition-all link-underline"
+              >
+                {t(`navbar.${item}`)}
+              </a>
+            ))}
+            <Button
+              asChild
+              variant="default"
+              size="sm"
+              className="bg-[#f39318] hover:bg-hover-orange transition-all"
+            >
+              <a href="#contact">{t("navbar.contact")}</a>
+            </Button>
+            <LanguageSwitcher />
+          </nav>
+
+          {/* Mobile Menu Toggle */}
+          <button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            className="md:hidden focus:outline-none relative w-6 h-6 flex flex-col justify-between"
+            aria-label="Toggle Menu"
+          >
             <span
               className={cn(
-                "block h-0.5 bg-foreground rounded-full transition-all duration-300",
+                "block h-0.5 bg-foreground rounded-full transition-all duration-300 w-full",
                 isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
               )}
             />
             <span
               className={cn(
-                "block h-0.5 bg-foreground rounded-full transition-all duration-300",
+                "block h-0.5 bg-foreground rounded-full transition-all duration-300 w-full",
                 isMobileMenuOpen ? "opacity-0" : "opacity-100"
               )}
             />
             <span
               className={cn(
-                "block h-0.5 bg-foreground rounded-full transition-all duration-300",
+                "block h-0.5 bg-foreground rounded-full transition-all duration-300 w-full",
                 isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
               )}
             />
-          </div>
-        </button>
-      </div>
+          </button>
+        </div>
+      </header>
 
-      {/* Mobile Menu */}
+      {/* Mobile Menu (moved outside header) */}
       <div
         className={cn(
-          "fixed inset-0 top-16 bg-white/95 backdrop-blur-md transition-all duration-300 ease-in-out md:hidden z-40",
+          "fixed inset-0 bg-white/95 backdrop-blur-md z-50 flex flex-col items-center justify-center gap-8 transition-all duration-300 ease-in-out md:hidden",
           isMobileMenuOpen
             ? "opacity-100 pointer-events-auto"
             : "opacity-0 pointer-events-none"
         )}
       >
-        <nav className="flex flex-col items-center justify-center h-full gap-8">
-          {menuItems.map((item) => (
-            <a
-              key={item}
-              href={`#${item}`}
-              className="text-lg font-medium text-muted-foreground hover:text-foreground transition-all"
-              onClick={() => setIsMobileMenuOpen(false)}
-            >
-              {t(`navbar.${item}`)}
-            </a>
-          ))}
-          <Button
-            asChild
-            variant="default"
-            size="default"
-            className="mt-4 bg-orange hover:bg-orange/90"
+        {/* Close Button (X) */}
+        <button
+          onClick={() => setIsMobileMenuOpen(false)}
+          className="absolute top-5 right-6 p-2 rounded-full focus:outline-none"
+          aria-label="Close Menu"
+        >
+          <div className="w-6 h-6 flex flex-col justify-between">
+            <span className="block h-0.5 w-full bg-foreground rotate-45 translate-y-2.5 transition-all duration-300" />
+            <span className="block h-0.5 w-full bg-foreground -rotate-45 -translate-y-2.5 transition-all duration-300" />
+          </div>
+        </button>
+
+        {menuItems.map((item) => (
+          <a
+            key={item}
+            href={`#${item}`}
+            className="text-lg font-medium text-muted-foreground hover:text-foreground transition-all"
+            onClick={() => setIsMobileMenuOpen(false)}
           >
-            <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
-              {t("navbar.contact")}
-            </a>
-          </Button>
-          <LanguageSwitcher />
-        </nav>
+            {t(`navbar.${item}`)}
+          </a>
+        ))}
+        <Button
+          asChild
+          variant="default"
+          size="default"
+          className="mt-4 bg-orange hover:bg-orange/90"
+        >
+          <a href="#contact" onClick={() => setIsMobileMenuOpen(false)}>
+            {t("navbar.contact")}
+          </a>
+        </Button>
+        <LanguageSwitcher />
       </div>
-    </header>
+    </>
   );
 };
 
