@@ -17,7 +17,7 @@ const Header = () => {
       />
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-background/90 via-background/50 to-background/90" />
 
-      <div className="container-xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center">
+      <div className="container-xl grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-8 items-center pt-10">
         {isMobile && (
           <FadeIn direction="down" delay={100} className="order-first mb-8">
             <div className="glass-card rounded-2xl p-2 shadow-soft-lg mx-auto max-w-md">
