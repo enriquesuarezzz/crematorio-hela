@@ -14,7 +14,7 @@ const Footer = () => {
             <ul className="grid grid-cols-3 gap-2 md:flex md:justify-between w-full text-base">
               {[
                 { name: t("navbar.services"), href: "#services" },
-                { name: t("navbar.process"), href: "#process" },
+                { name: t("navbar.urns"), href: "#urns" },
                 { name: t("navbar.fares"), href: "#fares" },
                 { name: t("navbar.schedules"), href: "#schedules" },
                 { name: t("navbar.about"), href: "#about" },
