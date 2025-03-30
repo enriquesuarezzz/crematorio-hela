@@ -1,7 +1,7 @@
 {
   "navbar": {
     "services": "Servicios",
-    "process": "Proceso",
+    "urns": "Urnas",
     "fares": "Tarifas",
     "schedules": "Horarios",
     "about": "Sobre Nosotros",
@@ -87,5 +87,64 @@
     "title": "Crematorio Hela",
     "description": "Brindando un adiós sereno y lleno de amor a tus mascotas desde 2015.",
     "copyright": "Crematorio Hela. Todos los derechos reservados."
+  },
+  "urns": {
+    "title": "Nuestras Urnas",
+    "description": "Urnas elegantes y cuidadosamente elaboradas para honrar recuerdos preciados. Nuestra colección ofrece diseños clásicos, modernos y atemporales. Fabricadas con materiales de alta calidad para un homenaje digno.",
+    "urn1": {
+      "title": "Básica",
+      "description": "Urna básica entregada en todas las cremaciones individuales",
+      "price": ""
+    },
+    "urn2": {
+      "title": "Japonesa",
+      "description": "Urna modelo Japonesa Mediana 15cm de diámetro x cm de alto",
+      "price": "37,45 €"
+    },
+    "urn3": {
+      "title": "Estrella",
+      "description": "Estrella mediana 17cm de diámetro x 13cm de alto.  Cuadrada gato 14cm x 14cm x 15cm de alto",
+      "price": "37,45 €"
+    },
+    "urn4": {
+      "title": "Perro",
+      "description": "Urna modelo Perro mediana 17cm de diámetro x 13cm de alto",
+      "price": "37,45 €"
+    },
+    "urn5": {
+      "title": "Columna",
+      "description": "Urna modelo columna 25cm de alto x 6,5cm de diámetro",
+      "price": "28,90 €"
+    },
+    "urn6": {
+      "title": "Plana",
+      "description": "Urna plana 14,5cm de diámetro x 8cm de alto",
+      "price": "28,90 €"
+    },
+    "urn7": {
+      "title": "Botella",
+      "description": "Urna modelo botella 10cm x 10cm x 12cm",
+      "price": "23,20 €"
+    },
+    "urn8": {
+      "title": "Aladin",
+      "description": "Urna modelo Aladín 11cm de diámetro x 15cm de alto",
+      "price": "27.00 €"
+    },
+    "urn9": {
+      "title": "Sima",
+      "description": "Urna Sma grande 19,5cm de diámetro x 11cm de alto",
+      "price": "60,00 €"
+    },
+    "urn10": {
+      "title": "Rampante",
+      "description": "Urna gato rampante mini 11,5cm x 11cm",
+      "price": "19,30 €"
+    },
+    "urn11": {
+      "title": "Rampante Tubo",
+      "description": "Urna modelo gato rampante tubo 20cm x 9cm",
+      "price": "35,50 €"
+    }
   }
 }
