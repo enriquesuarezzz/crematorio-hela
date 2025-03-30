@@ -26,7 +26,7 @@ const NavBar = () => {
     }
   }, [isMobileMenuOpen]);
 
-  const menuItems = ["services", "process", "fares", "schedules", "about"];
+  const menuItems = ["services", "urns", "fares", "schedules", "about"];
 
   return (
     <>
@@ -38,7 +38,7 @@ const NavBar = () => {
             : "bg-transparent"
         )}
       >
-        <div className="container-xl flex items-center justify-between p-4 mx-4">
+        <div className="w-full flex items-center justify-center p-4  gap-10">
           <a
             href="#"
             className="font-serif flex items-center gap-2 text-xl md:text-2xl text-primary transition hover:text-orange"
@@ -46,7 +46,7 @@ const NavBar = () => {
             <img
               src="/images/logo.avif"
               alt="logo"
-              className="w-20 lg:w-40 h-10 lg:h-16"
+              className="w-40 h-16 md:w-28 md:h-10 lg:w-40 lg:h-16"
             />
           </a>
 

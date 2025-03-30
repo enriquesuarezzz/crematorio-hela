@@ -1,9 +1,7 @@
 import NavBar from "@/components/NavBar";
-import Hero from "@/components/Header";
 import Services from "@/components/Services";
-import Process from "@/components/Process";
+import UrnsSwiper from "@/components/UrnsSwiper";
 import About from "@/components/About";
-
 import Fares from "@/components/Fares";
 import Schedules from "@/components/Schedules";
 import Contact from "@/components/Contact";
@@ -16,7 +14,7 @@ const Index = () => {
       <NavBar />
       <Header />
       <Services />
-      <Process />
+      <UrnsSwiper />
       <Fares />
       <Schedules />
       <About />

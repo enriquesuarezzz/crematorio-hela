@@ -1,7 +1,7 @@
 {
   "navbar": {
     "services": "Services",
-    "process": "Process",
+    "urns": "Urns",
     "fares": "Fares",
     "schedules": "Schedules",
     "about": "About Us",
@@ -87,5 +87,64 @@
     "title": "Crematorio Hela",
     "description": "Providing a serene and loving farewell to your pets since 2015.",
     "copyright": "Crematorio Hela. All rights reserved."
+  },
+  "urns": {
+    "title": "Our Urns",
+    "description": "Elegant and thoughtfully crafted urns to honor cherished memories. Our collection offers classic, modern, and timeless designs. Made with high-quality materials for a dignified tribute.",
+    "urn1": {
+      "title": "Basic",
+      "description": "Basic urn delivered in all individual cremations",
+      "price": ""
+    },
+    "urn2": {
+      "title": "Japanese",
+      "description": "Medium Japanese model urn 15cm diameter x cm high",
+      "price": "37,45 €"
+    },
+    "urn3": {
+      "title": "Star",
+      "description": "Medium star 17cm diameter x 13cm high. Square cat 14cm x 14cm x 15cm high",
+      "price": "37,45 €"
+    },
+    "urn4": {
+      "title": "Dog",
+      "description": "Medium Dog model urn 17cm diameter x 13cm high",
+      "price": "37,45 €"
+    },
+    "urn5": {
+      "title": "Column",
+      "description": "Column model urn 25cm high x 6.5cm in diameter",
+      "price": "28,90 €"
+    },
+    "urn6": {
+      "title": "Flat",
+      "description": "Flat urn 14.5cm diameter x 8cm high",
+      "price": "28,90 €"
+    },
+    "urn7": {
+      "title": "Bottle",
+      "description": "Bottle model urn 10cm x 10cm x 12cm",
+      "price": "23,20 €"
+    },
+    "urn8": {
+      "title": "Aladin",
+      "description": "Aladín model urn 11cm diameter x 15cm high",
+      "price": "27.00 €"
+    },
+    "urn9": {
+      "title": "Sima",
+      "description": "Large Sima urn 19.5cm diameter x 11cm high",
+      "price": "60,00 €"
+    },
+    "urn10": {
+      "title": "Rampante",
+      "description": "Mini rampant cat urn 11.5cm x 11cm",
+      "price": "19,30 €"
+    },
+    "urn11": {
+      "title": "Rampante Tubo",
+      "description": "Urn model rampant cat tube 20cm x 9cm",
+      "price": "35,50 €"
+    }
   }
 }
