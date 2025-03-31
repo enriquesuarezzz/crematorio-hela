@@ -1,4 +1,4 @@
-# 🐾 Pet Crematory Website
+# 🐾 Crenmatorio Hela Website
 
 A modern and responsive web application for a pet crematory service, built with **Vite, React, Tailwind CSS, Swiper, and i18n** for translations.
 
@@ -13,14 +13,14 @@ A modern and responsive web application for a pet crematory service, built with 
 - **Vite** ⚡ (for fast development and bundling)
 - **React** ⚛️ (for UI components)
 - **Tailwind CSS** 🎨 (for styling)
-- **Swiper.js** 🖼️ (for displaying urns and other items)
+- **Swiper.js** 🖼️ (for displaying urns)
 - **i18n** 🌎 (for translations)
 
 ## 📦 Installation
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/enriquesuarezzz/crematorio-hela.git
    cd your-repo-name
    ```
 
@@ -45,12 +45,6 @@ npm run build
 ```
 The output will be in the `dist/` folder, ready for deployment.
 
-## 📜 License
-MIT License.
 
-## 🙌 Contributing
-Feel free to fork this repository and submit pull requests!
 
----
-Made with ❤️ for our beloved pets. 🐶🐱🌈
 
