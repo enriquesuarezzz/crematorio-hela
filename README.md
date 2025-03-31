@@ -24,7 +24,7 @@ A modern and responsive web application for a pet crematory service, built with 
    ```
       ```sh
      cd crematorio-hela
-         ```
+      ```
 
 2. Install dependencies:
    ```sh
