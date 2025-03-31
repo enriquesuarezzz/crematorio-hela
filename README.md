@@ -21,7 +21,7 @@ A modern and responsive web application for a pet crematory service, built with 
 1. Clone the repository:
    ```sh
    git clone https://github.com/enriquesuarezzz/crematorio-hela.git
-   cd your-repo-name
+   cd crematorio-hela
    ```
 
 2. Install dependencies:
