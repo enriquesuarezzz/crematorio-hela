@@ -1,4 +1,4 @@
-# 🐾 Crenmatorio Hela Website
+# 🐾 Crematorio Hela Website
 
 A modern and responsive web application for a pet crematory service, built with **Vite, React, Tailwind CSS, Swiper, and i18n** for translations.
 
