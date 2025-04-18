@@ -1,15 +1,15 @@
-import { Toaster } from "@/components/ui/toaster"; // Keeping the Toaster component
+import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // Import useTranslation hook
+import { useTranslation } from "react-i18next";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
 
 const App = () => {
-  const { t } = useTranslation(); // Hook to get translations
+  const { t } = useTranslation();
 
   return (
     <QueryClientProvider client={queryClient}>
