@@ -1,9 +1,8 @@
-// src/main.tsx
-import React from "react"; // Add this import
+import React from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
-import "./i18n"; // Import i18n configuration
-import "./index.css"; // Your global styles
+import "./i18n";
+import "./index.css";
 
 const root = createRoot(document.getElementById("root")!);
 root.render(
