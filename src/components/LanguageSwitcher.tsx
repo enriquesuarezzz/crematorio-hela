@@ -1,8 +1,7 @@
-// src/LanguageSwitcher.tsx
 import React from "react";
 import { useTranslation } from "react-i18next";
-import English from "./svg/english";
-import Spanish from "./svg/spanish";
+import English from "./svg/English";
+import Spanish from "./svg/Spanish";
 
 const LanguageSwitcher: React.FC = () => {
   const { i18n } = useTranslation();
